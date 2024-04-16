@@ -5,47 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Epic Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="sidebar">
-      <div class="logo">
+      <div class="logo grid-column">
         <img src="./icons/logo.svg" alt="logo" class="dashboard-logo" />
-        <span class="title">Dashboard</span>
+        <span class="logo-title">Dashboard</span>
       </div>
 
       <ul class="menu">
         <img src="./icons/home.svg" alt="home-icon" />
-        <li>Home</li>
+        <li><a href="" class="link">Home</a></li>
         <img src="./icons/profile.svg" alt="profile-icon" />
-        <li>Profile</li>
+        <li><a href="" class="link">Profile</a></li>
         <img src="./icons/message.svg" alt="msg-icon" />
-        <li>Messages</li>
+        <li><a href="" class="link">Messages</a></li>
         <img src="./icons/history.svg" alt="history-icon" />
-        <li>History</li>
+        <li><a href="" class="link">History</a></li>
         <img src="./icons/task.svg" alt="task-icon" />
-        <li>Tasks</li>
+        <li><a href="" class="link">Tasks</a></li>
         <img src="./icons/communities.svg" alt="comm-icon" />
-        <li>Communities</li>
+        <li><a href="" class="link">Communities</a></li>
       </ul>
 
       <ul class="menu">
         <img src="./icons/settings.svg" alt="sett-icon" />
-        <li>Settings</li>
+        <li><a href="" class="link">Settings</a></li>
         <img src="./icons/support.svg" alt="supp-icon" />
-        <li>Support</li>
+        <li><a href="" class="link">Support</a></li>
         <img src="./icons/privacy.svg" alt="privacy-icon" />
-        <li>Privacy</li>
+        <li><a href="" class="link">Privacy</a></li>
       </ul>
     </div>
 
     <div class="header">
-      <div class="search-nav">
+      <div class="search-nav grid-column">
         <img class="icon" src="./icons/search.svg" alt="search-icon" />
         <input type="search" name="search" id="search-bar" />
       </div>
 
-      <div class="profile-nav">
-        <img src="./icons/bell.svg" alt="notification" />
+      <div class="profile-nav grid-column">
+        <img class="icon" src="./icons/bell.svg" alt="notification" />
 
         <div class="normal-img">
           <img
@@ -54,7 +60,7 @@
             alt="main-profile-img"
           />
         </div>
-        <p> Gnomington </p>
+        <p class="user-normal"> Gnomington </p>
       </div>
 
       <div class="user">
@@ -65,11 +71,11 @@
             alt="main-profile-img"
           />
         </div>
-        <p class="welcome">Hi there,</p>
-        <p class="user-hashtag">A name (@A name)</p>
+        <p class="description">Hi there,</p>
+        <p class="user-large">Gnomington (@noHands)</p>
       </div>
 
-      <div class="btn-container">
+      <div class="btn-container grid-column">
         <button>New</button>
         <button>Upload</button>
         <button>Share</button>
@@ -81,72 +87,143 @@
         <h1 class="title">Your Projects</h1>
 
         <div class="card">
-          <h5 class="subtitle">Supper Cool Project</h5>
+          <h5 class="subtitle">Super Cool Project</h5>
           <p class="description"> balbalbalblablablabablabla</p>
-          <div class="actions">
-            <img src="./icons/star-plus.svg" alt="star" />
-            <img src="./icons/eye-plus.svg" alt="watch" />
-            <img src="./icons/branch.svg" alt="branch" />
+          <div class="actions grid-column">
+            <button class="image"
+              ><img class="icon" src="./icons/star-plus.svg" alt="star"
+            /></button>
+            <button class="image"
+              ><img class="icon" src="./icons/eye-plus.svg" alt="watch"
+            /></button>
+            <button class="image"
+              ><img class="icon" src="./icons/branch.svg" alt="branch"
+            /></button>
           </div>
         </div>
 
         <div class="card">
-          <h5 class="subtitle">Supper Cool Project</h5>
+          <h5 class="subtitle">Super Cool Project</h5>
           <p class="description"> balbalbalblablablabablabla</p>
-          <div class="actions">
-            <img src="./icons/star-plus.svg" alt="star" />
-            <img src="./icons/eye-plus.svg" alt="watch" />
-            <img src="./icons/branch.svg" alt="branch" />
+          <div class="actions grid-column">
+            <button class="image"
+              ><img class="icon" src="./icons/star-plus.svg" alt="star"
+            /></button>
+            <button class="image"
+              ><img class="icon" src="./icons/eye-plus.svg" alt="watch"
+            /></button>
+            <button class="image"
+              ><img class="icon" src="./icons/branch.svg" alt="branch"
+            /></button>
           </div>
         </div>
 
         <div class="card">
-          <h5 class="subtitle">Supper Cool Project</h5>
+          <h5 class="subtitle">Super Cool Project</h5>
           <p class="description"> balbalbalblablablabablabla</p>
-          <div class="actions">
-            <img src="./icons/star-plus.svg" alt="star" />
-            <img src="./icons/eye-plus.svg" alt="watch" />
-            <img src="./icons/branch.svg" alt="branch" />
+          <div class="actions grid-column">
+            <button class="image"
+              ><img class="icon" src="./icons/star-plus.svg" alt="star"
+            /></button>
+            <button class="image"
+              ><img class="icon" src="./icons/eye-plus.svg" alt="watch"
+            /></button>
+            <button class="image"
+              ><img class="icon" src="./icons/branch.svg" alt="branch"
+            /></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h5 class="subtitle">Super Cool Project</h5>
+          <p class="description"> balbalbalblablablabablabla</p>
+          <div class="actions grid-column">
+            <button class="image"
+              ><img class="icon" src="./icons/star-plus.svg" alt="star"
+            /></button>
+            <button class="image"
+              ><img class="icon" src="./icons/eye-plus.svg" alt="watch"
+            /></button>
+            <button class="image"
+              ><img class="icon" src="./icons/branch.svg" alt="branch"
+            /></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h5 class="subtitle">Super Cool Project</h5>
+          <p class="description"> balbalbalblablablabablabla</p>
+          <div class="actions grid-column">
+            <button class="image"
+              ><img class="icon" src="./icons/star-plus.svg" alt="star"
+            /></button>
+            <button class="image"
+              ><img class="icon" src="./icons/eye-plus.svg" alt="watch"
+            /></button>
+            <button class="image"
+              ><img class="icon" src="./icons/branch.svg" alt="branch"
+            /></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <h5 class="subtitle">Super Cool Project</h5>
+          <p class="description"> balbalbalblablablabablabla</p>
+          <div class="actions grid-column">
+            <button class="image"
+              ><img class="icon" src="./icons/star-plus.svg" alt="star"
+            /></button>
+            <button class="image"
+              ><img class="icon" src="./icons/eye-plus.svg" alt="watch"
+            /></button>
+            <button class="image"
+              ><img class="icon" src="./icons/branch.svg" alt="branch"
+            /></button>
           </div>
         </div>
       </div>
 
-      <div class="container announ">
+      <div class="container offside">
         <h1 class="title">Announcements</h1>
-        <div class="line-container">
+        <div class="line-container shadow">
           <div class="news">
-            <h1 class="title">Site Maintenance</h1>
-            <p> newnewnewnewnewn</p>
+            <h1 class="subtitle">Will the boat arc end?</h1>
+            <p> Someday... hopefully</p>
           </div>
           <div class="news line">
-            <h1 class="title">Site Maintenance</h1>
-            <p> newnewnewnewnewn</p>
+            <h1 class="subtitle">Welcome to Falconia! </h1>
+            <p> Previously the falcon gang</p>
           </div>
           <div class="news line">
-            <h1 class="title">Site Maintenance</h1>
-            <p> newnewnewnewnewn</p>
+            <h1 class="subtitle">Casca memories has been restored!</h1>
+            <p> But Griffith strikes again and Casca is off the gang</p>
           </div>
         </div>
       </div>
 
-      <div class="container trending">
+      <div class="container offside">
         <h1 class="title">Trending</h1>
 
-        <div class="line-container">
+        <div class="line-container shadow">
           <div class="user-container">
             <img class="profile-img" src="./img/profile1.png" alt="p1" />
-            <p class="user-hashtag">@tetete</p>
-            <p class="description">aosdnfaosjdfnaojsdnf</p>
+            <p class="user-hashtag">@TheBlackSwordsman</p>
+            <p class="description"
+              >Even if we painstakingly piece together something lost, it
+              doesn’t mean things will ever go back to how they were.</p
+            >
           </div>
           <div class="user-container line">
             <img class="profile-img" src="./img/profile2.jpg" alt="p1" />
-            <p class="user-hashtag">@tetete</p>
-            <p class="description">aosdnfaosjdfnaojsdnf</p>
+            <p class="user-hashtag">@Casca</p>
+            <p class="description">You really are a complete fool</p>
           </div>
           <div class="user-container line">
             <img class="profile-img" src="./img/profile3.jpg" alt="p1" />
-            <p class="user-hashtag">@tetete</p>
-            <p class="description">aosdnfaosjdfnaojsdnf</p>
+            <p class="user-hashtag">@WhiteFalcon</p>
+            <p class="description"
+              >A dream... It's something you do for yourself, not for others</p
+            >
           </div>
         </div>
       </div>
